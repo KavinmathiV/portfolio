@@ -29,17 +29,17 @@ const About: React.FC = () => {
         {/* Quick Facts */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           <QuickFact 
-            icon={<div className="text-primary"><FaMapMarkerAlt /></div>}
+            icon={<FaMapMarkerAlt className="text-primary" size={24} />}
             title="Location"
             value="Chennai"
           />
           <QuickFact 
-            icon={<div className="text-primary"><FaGraduationCap /></div>}
+            icon={<FaGraduationCap className="text-primary" size={24} />}
             title="Education"
             value="B.Tech in AI & DS (2022-2026)"
           />
           <QuickFact 
-            icon={<div className="text-primary"><FaBrain /></div>}
+            icon={<FaBrain className="text-primary" size={24} />}
             title="CGPA"
             value="8.64"
           />
@@ -83,7 +83,7 @@ const About: React.FC = () => {
 };
 
 interface QuickFactProps {
-  icon: React.ReactNode;
+  icon: React.ReactElement;
   title: string;
   value: string;
 }
